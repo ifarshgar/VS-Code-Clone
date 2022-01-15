@@ -38,4 +38,5 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 ## Project dependencies 
 `$ npm install @auth0/auth0-react`
+
 `$ npm install react-router-dom @types/react-router-dom`
