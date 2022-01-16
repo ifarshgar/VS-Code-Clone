@@ -35,6 +35,10 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
+## .env
+This file contains the keys of some api calls and it is supposed to be private and not shared on GitHub
+if the repository is public for example.
+
 
 ## Project dependencies 
 `$ npm install @auth0/auth0-react`
