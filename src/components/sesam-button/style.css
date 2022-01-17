@@ -1,0 +1,13 @@
+.SesamButton {
+  padding: 8px 20px;
+  border-radius: 3px;
+  color: #fff;
+  background: cornflowerblue; /* #6495ed */
+  border: none;
+  cursor: pointer;
+  width: max-content;
+}
+
+.SesamButton:hover {
+  background: lightskyblue; /* #87cefa */
+}

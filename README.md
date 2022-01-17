@@ -44,3 +44,7 @@ if the repository is public for example.
 `$ npm install @auth0/auth0-react`
 
 `$ npm install react-router-dom @types/react-router-dom`
+
+`$ npm install node-sass`
+
+`$ npm install react-icons`

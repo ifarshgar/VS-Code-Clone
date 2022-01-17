@@ -1,11 +1,10 @@
 import React from 'react';
 import { useAuth0 } from '@auth0/auth0-react';
 
-import LoginButton from './components/LoginButton';
-import LogoutButton from './components/LogoutButton';
-import Profile from './components/Profile';
+import Profile from './views/profile/Profile';
 
 import './App.css';
+import Header from 'views/header/Header';
 
 function App() {
   const { isAuthenticated } = useAuth0();
@@ -13,20 +12,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Hi</h1>
+        <Header />
       </header>
-      <div className="login">
-        {!isAuthenticated ? (
-          <div>
-            <h1>Please Login</h1>
-            <LoginButton />
-          </div>
-        ) : (
-          <div>
-            <LogoutButton />
-            <Profile />
-          </div>
-        )}
+      
+      <div className="App-body">
+        {isAuthenticated && <Profile />}
+        {!isAuthenticated && 
+          <h2>Please log in to see the user details</h2>
+        }
       </div>
     </div>
   );
