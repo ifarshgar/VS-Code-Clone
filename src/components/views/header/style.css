@@ -22,6 +22,11 @@ ul.menu-bar li:last-child {
   padding-left: 50px;
 }
 
+.white-link {
+  color: #fff;
+  text-decoration: none;
+}
+
 .login {
   display: inline-block;
   position: relative;

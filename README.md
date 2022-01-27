@@ -48,3 +48,7 @@ if the repository is public for example.
 `$ npm install node-sass`
 
 `$ npm install react-icons`
+
+`$ npm install @mui/material @emotion/react @emotion/styled`
+
+`$ npm install @mui/material @mui/styled-engine-sc styled-components`
