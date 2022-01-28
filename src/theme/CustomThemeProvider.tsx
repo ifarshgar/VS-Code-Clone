@@ -1,6 +1,5 @@
 import React, { PropsWithChildren } from 'react';
-import { ThemeProvider } from '@mui/private-theming';
-import { createTheme } from '@mui/material';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 import { commonColors, darkColors, lightColors } from './colors';
 

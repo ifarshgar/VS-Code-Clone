@@ -2,6 +2,8 @@ export const commonColors = {
   white: '#fff',
   black: '#000',
   primary: '#203040',
+  cornflowerblue:  '#6495ed',
+  lightskyblue: '#87cefa'
 };
 
 export const lightColors = {
