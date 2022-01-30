@@ -6,17 +6,20 @@ import Router from './Router';
 
 import { CircularProgress } from '@mui/material';
 import './App.css';
+import StoreProvider from 'store/StoreProvider';
 
 function App() {
   return (
     <Suspense fallback={<CircularProgress />}>
-      <BrowserRouter>
-        <AuthProvider>
-          <CustomThemeProvider>
-            <Router />
-          </CustomThemeProvider>
-        </AuthProvider>
-      </BrowserRouter>
+      <StoreProvider>
+        <BrowserRouter>
+          <AuthProvider>
+            <CustomThemeProvider>
+              <Router />
+            </CustomThemeProvider>
+          </AuthProvider>
+        </BrowserRouter>
+      </StoreProvider>
     </Suspense>
   );
 }

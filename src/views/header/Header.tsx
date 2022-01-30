@@ -5,6 +5,7 @@ import { AppBar, Toolbar, Typography } from '@mui/material';
 
 import LoginButton from 'auth/LoginButton';
 import LogoutButton from 'auth/LogoutButton';
+import DarkModeSwitch from './DarkModeSwitch';
 
 const StyledLink = styled(Link)(({ theme }) => ({
   textDecoration: 'none',
@@ -32,7 +33,7 @@ const Header = () => {
             <Typography variant="body1" sx={{ marginRight: '20px' }}>
               <StyledLink to="/profile">Profile</StyledLink>
             </Typography>
-            {/* <DarkModeSwitch /> */}
+            <DarkModeSwitch />
             <div style={{ alignContent: 'flex-end' }}>
               <AuthenticationButton />
             </div>

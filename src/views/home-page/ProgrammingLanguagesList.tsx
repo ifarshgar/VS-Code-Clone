@@ -8,7 +8,13 @@ import { ReactComponent as PythonIcon } from 'assets/images/python.svg';
 import { ReactComponent as RubyIcon } from 'assets/images/ruby.svg';
 import { ReactComponent as TypescriptIcon } from 'assets/images/typescript.svg';
 import { ReactComponent as ReactIcon } from 'assets/images/react.svg';
-import { Typography } from '@mui/material';
+import { styled } from '@mui/material/styles';
+
+const WelcomeMessage = styled('div')(({ theme }) => ({
+  padding: '15px',
+  fontSize: '30px',
+  color: theme.font,
+}));
 
 const ProgrammingLanguagesList = () => {
   const style = {
@@ -19,9 +25,7 @@ const ProgrammingLanguagesList = () => {
 
   return (
     <div style={{ marginTop: '12%' }}>
-      <Typography variant="h4" gutterBottom component="div">
-        Welcome to the Code Editor App
-      </Typography>
+      <WelcomeMessage>Welcome to the Code Editor App</WelcomeMessage>
       <CSSIcon style={style} />
       <GoIcon style={style} />
       <HtmlIcon style={style} />

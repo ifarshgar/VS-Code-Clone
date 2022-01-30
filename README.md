@@ -53,4 +53,6 @@ if the repository is public for example.
 
 `$ npm install @mui/material @mui/styled-engine-sc styled-components`
 
-`$ npm install @reduxjs/toolkit`
+`$ npm install @mui/icons-material`
+
+`$ npm install react-redux @reduxjs/toolkit`
