@@ -8,11 +8,5 @@ type ProtectedRouteProps = {
 const ProtectedRoute = ({ children }: ProtectedRouteProps) => children;
 
 export default withAuthenticationRequired(ProtectedRoute, {
-  onRedirecting: () => (
-    <div className="App-body">
-      <h2>Redirecting you to the login page...</h2>
-      <br />
-      <Loading />
-    </div>
-  ),
+  onRedirecting: () => <Loading text="Redirecting you to the login page..." />,
 });

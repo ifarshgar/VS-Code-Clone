@@ -1,6 +1,7 @@
 import { useAuth0 } from '@auth0/auth0-react';
 import MaterialButton from 'components/common/material-button/MaterialButton';
 import React, { FC } from 'react';
+import ProgrammingLanguagesList from './ProgrammingLanguagesList';
 
 type HomePageProps = {
   isAuthenticated: boolean;
@@ -19,6 +20,7 @@ const HomePage: FC<HomePageProps> = ({ isAuthenticated }) => {
           <MaterialButton value="Sign in" onClick={() => loginWithRedirect()} />
         </div>
       )}
+      <ProgrammingLanguagesList />
     </div>
   );
 };

@@ -1,4 +1,6 @@
-import Profile from '../auth/profile/Profile'
+import React from 'react';
+
+const Profile = React.lazy(() => import('views/profile/Profile'))
 
 const ProfilePage = () => {
   return (
