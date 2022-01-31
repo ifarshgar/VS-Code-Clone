@@ -4,6 +4,7 @@ import { styled } from '@mui/material/styles';
 
 import MaterialButton from 'components/common/material-button/MaterialButton';
 import ProgrammingLanguagesList from './ProgrammingLanguagesList';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 type HomePageProps = {
   isAuthenticated: boolean;
