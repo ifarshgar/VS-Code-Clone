@@ -24,7 +24,7 @@ const ProgrammingLanguagesList = () => {
   };
 
   return (
-    <div style={{ marginTop: '12%' }}>
+    <div style={{ marginTop: '8%' }}>
       <WelcomeMessage>Welcome to the Code Editor App</WelcomeMessage>
       <CSSIcon style={style} />
       <GoIcon style={style} />

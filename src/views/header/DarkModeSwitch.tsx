@@ -1,6 +1,6 @@
 import { Switch } from '@mui/material';
-import { useAppDispatch, useAppSelector } from 'store/Hooks';
-import { toggleDarkMode } from 'store/slices/dark-mode/DarkMode';
+import { useAppDispatch, useAppSelector } from 'redux-store/Hooks';
+import { toggleDarkMode } from 'redux-store/slices/dark-mode/DarkMode';
 import DarkModeIcon from '@mui/icons-material/DarkMode';
 
 const DarkModeSwitch = () => {

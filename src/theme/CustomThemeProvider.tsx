@@ -2,7 +2,7 @@ import React, { PropsWithChildren } from 'react';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 
 import { commonColors, darkColors, lightColors } from './colors';
-import { useAppSelector } from 'store/Hooks';
+import { useAppSelector } from 'redux-store/Hooks';
 
 declare module '@mui/material/styles' {
   interface Theme {

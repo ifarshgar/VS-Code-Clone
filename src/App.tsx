@@ -6,7 +6,7 @@ import Router from './Router';
 
 import { CircularProgress } from '@mui/material';
 import './App.css';
-import StoreProvider from 'store/StoreProvider';
+import StoreProvider from 'redux-store/StoreProvider';
 
 function App() {
   return (
