@@ -16,13 +16,13 @@ const WelcomeMessage = styled('div')(({ theme }) => ({
   color: theme.font,
 }));
 
-const ProgrammingLanguagesList = () => {
-  const style = {
-    padding: '10px',
-    height: '50px',
-    width: '50px',
-  };
+const style = {
+  padding: '10px',
+  height: '50px',
+  width: '50px',
+};
 
+const ProgrammingLanguagesList = () => {
   return (
     <div style={{ marginTop: '8%' }}>
       <WelcomeMessage>Welcome to the Code Editor App</WelcomeMessage>
