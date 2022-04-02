@@ -56,3 +56,5 @@ if the repository is public for example.
 `$ npm install @mui/icons-material`
 
 `$ npm install react-redux @reduxjs/toolkit`
+
+`$ npm install redux-persist`
