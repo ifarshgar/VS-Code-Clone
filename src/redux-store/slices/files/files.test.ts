@@ -94,5 +94,26 @@ describe('files slice', () => {
     };
     expect(filesReducer(currentState, updateFileCode(payload))).toEqual(expectedState);
   });
+
+  it('should not update the file code when file is not found and the action is updateFileCode', () => {
+    const payload = {
+      fileId: '2',
+      newCode: 'console.log("I am code")',
+    };
+    const currentState = {
+      ...initialState,
+      userFiles: [
+        {
+          id: '1',
+          name: 'inde.js',
+          relativePath: 'src/index.js',
+          code: 'console.log("Testing")',
+          extension: '.js',
+        },
+      ],
+    };
+    const expectedState = currentState;
+    expect(filesReducer(currentState, updateFileCode(payload))).toEqual(expectedState);
+  });
 });
 
