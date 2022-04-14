@@ -12,14 +12,18 @@ const StyledButton = styled(Button)(({ theme }) => ({
   },
 }));
 
-
 type MaterialButtonProps = {
-  value: string;
+  value?: string;
+  children?: Node;
   onClick: () => void;
 };
 
 const MaterialButton = (props: MaterialButtonProps) => {
-  return <StyledButton onClick={props.onClick}>{props.value}</StyledButton>;
+  return (
+    <StyledButton onClick={props.onClick}>
+      {props.children ?? props.value}
+    </StyledButton>
+  );
 };
 
 export default MaterialButton;

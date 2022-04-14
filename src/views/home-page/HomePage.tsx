@@ -6,6 +6,7 @@ import ProgrammingLanguagesList from './ProgrammingLanguagesList';
 import HomeContainer from 'components/common/HomeContainer';
 import HeaderText from 'components/common/HeaderText';
 import ParagraphText from 'components/common/ParagraphText';
+import OpenWorkspaceButton from 'views/header/OpenWorkspaceButton';
 
 type HomePageProps = {
   isAuthenticated: boolean;
@@ -26,6 +27,9 @@ const HomePage: FC<HomePageProps> = ({ isAuthenticated }) => {
             </ParagraphText>
             <MaterialButton value="Sign in" onClick={() => loginWithRedirect()} />
           </div>
+        )}
+        {isAuthenticated && (
+          <OpenWorkspaceButton />
         )}
         <ProgrammingLanguagesList />
       </div>
