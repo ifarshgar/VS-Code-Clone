@@ -6,7 +6,7 @@ import ProgrammingLanguagesList from './ProgrammingLanguagesList';
 import HomeContainer from 'components/common/HomeContainer';
 import HeaderText from 'components/common/HeaderText';
 import ParagraphText from 'components/common/ParagraphText';
-import OpenWorkspaceButton from 'views/header/OpenWorkspaceButton';
+import { useNavigate } from 'react-router-dom';
 
 type HomePageProps = {
   isAuthenticated: boolean;
@@ -14,6 +14,7 @@ type HomePageProps = {
 
 const HomePage: FC<HomePageProps> = ({ isAuthenticated }) => {
   const { loginWithRedirect } = useAuth0();
+  const navigate = useNavigate();
 
   return (
     <HomeContainer>
@@ -29,7 +30,7 @@ const HomePage: FC<HomePageProps> = ({ isAuthenticated }) => {
           </div>
         )}
         {isAuthenticated && (
-          <OpenWorkspaceButton />
+          <MaterialButton onClick={() => navigate('workspace')}>Open Editor</MaterialButton>
         )}
         <ProgrammingLanguagesList />
       </div>

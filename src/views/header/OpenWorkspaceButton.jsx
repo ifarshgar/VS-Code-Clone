@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import { styled } from '@mui/material/styles';
 import { useAppDispatch } from 'redux-store/Hooks';
 import { readFiles } from 'redux-store/thunks/read-files/readFiles';
-import MaterialButton from 'components/common/material-button/MaterialButton';
+import SesamButton from 'components/common/sesam-button/SesamButton';
 
 const InputFile = styled('input')({ display: 'none' });
 
@@ -25,7 +25,7 @@ const OpenWorkspaceButton = () => {
 
   return (
     <div>
-      <MaterialButton onClick={handler}>Open Workspace</MaterialButton>
+      <SesamButton onClick={handler} text="Open Workspace" style={{ marginRight: '10px' }} />
       <InputFile
         type="file"
         ref={inputDirectory}

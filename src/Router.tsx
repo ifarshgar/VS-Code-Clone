@@ -8,16 +8,25 @@ import HomePage from 'views/home-page/HomePage';
 import ProfilePage from 'views/ProfilePage';
 import PageNotFound from 'views/PageNotFound';
 import Loading from 'components/common/loading/Loading';
+import CodeEditor from 'views/CodeEditor';
 
 const Router = () => {
   const { isAuthenticated, isLoading } = useAuth0();
 
-  if(isLoading) return <Loading />
+  if (isLoading) return <Loading />;
 
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<HomePage isAuthenticated={isAuthenticated} />} />
+        <Route
+          path="/workspace"
+          element={
+            <ProtectedRoute>
+              <CodeEditor />
+            </ProtectedRoute>
+          }
+        />
         <Route
           path="/profile"
           element={

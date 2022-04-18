@@ -6,6 +6,7 @@ import { AppBar, Toolbar, Typography } from '@mui/material';
 import LoginButton from 'auth/LoginButton';
 import LogoutButton from 'auth/LogoutButton';
 import DarkModeSwitch from './DarkModeSwitch';
+import OpenWorkspaceButton from './OpenWorkspaceButton';
 
 const StyledLink = styled(Link)(({ theme }) => ({
   textDecoration: 'none',
@@ -22,6 +23,8 @@ const AuthenticationButton = () => {
 };
 
 const Header = () => {
+  const { isAuthenticated } = useAuth0();
+
   return (
     <div className="App">
       <div className="header">
@@ -30,6 +33,7 @@ const Header = () => {
             <Typography variant="h6" sx={{ flex: 1, display: 'flex' }}>
               <StyledLink to="/">Code Editor App</StyledLink>
             </Typography>
+            {isAuthenticated && <OpenWorkspaceButton />}
             <Typography variant="body1" sx={{ marginRight: '20px' }}>
               <StyledLink to="/profile">Profile</StyledLink>
             </Typography>

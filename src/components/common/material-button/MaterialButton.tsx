@@ -14,7 +14,7 @@ const StyledButton = styled(Button)(({ theme }) => ({
 
 type MaterialButtonProps = {
   value?: string;
-  children?: Node;
+  children?: Node | string;
   onClick: () => void;
 };
 

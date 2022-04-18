@@ -58,3 +58,13 @@ if the repository is public for example.
 `$ npm install react-redux @reduxjs/toolkit`
 
 `$ npm install redux-persist`
+
+`$ npm install @mui/lab`
+
+`$ npm install monaco-editor`
+
+`$ npm install @monaco-editor/react`
+
+`$ npm install lodash`
+
+`$ npm install @types/lodash`
