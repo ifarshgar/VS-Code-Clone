@@ -5,10 +5,10 @@ interface SesamButtonTypes {
   onClick: () => void;
 }
 
-const SesamButton = (props: SesamButtonTypes) => {
+const SesamButton = ({ text, onClick, ...rest }: SesamButtonTypes) => {
   return (
-    <button className="SesamButton" onClick={props.onClick}>
-      {props.text}
+    <button className="SesamButton" onClick={onClick} {...rest}>
+      {text}
     </button>
   );
 };
